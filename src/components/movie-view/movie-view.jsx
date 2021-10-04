@@ -48,35 +48,15 @@ export class MovieView extends React.Component {
   }
 }
 
-// MovieView.propTypes = {
-//   movieData: PropTypes.shape({
-//     ImagePath: PropTypes.string.isRequired,
-//     Title: PropTypes.string.isRequired,
-//     Year: PropTypes.string.isRequired,
-//     Genre: PropTypes.shape({
-//       Name: PropTypes.string,
-//       Description: PropTypes.string,
-//     }),
-//     Description: PropTypes.string.isRequired,
-//     Director: PropTypes.shape({
-//       Name: PropTypes.string.isRequired,
-//     }),
-//   }).isRequired,
-//   onBackClick: PropTypes.func.isRequired,
-// };
-
 MovieView.propTypes = {
   movieData: PropTypes.shape({
     ImagePath: PropTypes.string.isRequired,
     Title: PropTypes.string.isRequired,
     Year: PropTypes.string.isRequired,
-    Genre: PropTypes.arrayOf(
-      PropTypes.shape({
-        _id: PropTypes.string.isRequired,
-        Name: PropTypes.string.isRequired,
-        Description: PropTypes.string,
-      }).isRequired,
-    ).isRequired,
+    Genre: PropTypes.shape({
+      Name: PropTypes.string,
+      Description: PropTypes.string,
+    }),
     Description: PropTypes.string.isRequired,
     Director: PropTypes.shape({
       Name: PropTypes.string.isRequired,
@@ -84,3 +64,23 @@ MovieView.propTypes = {
   }).isRequired,
   onBackClick: PropTypes.func.isRequired,
 };
+
+// MovieView.propTypes = {
+//   movieData: PropTypes.shape({
+//     ImagePath: PropTypes.string.isRequired,
+//     Title: PropTypes.string.isRequired,
+//     Year: PropTypes.string.isRequired,
+//     Genre: PropTypes.arrayOf(
+//       PropTypes.shape({
+//         _id: PropTypes.string.isRequired,
+//         Name: PropTypes.string.isRequired,
+//         Description: PropTypes.string,
+//       }).isRequired,
+//     ).isRequired,
+//     Description: PropTypes.string.isRequired,
+//     Director: PropTypes.shape({
+//       Name: PropTypes.string.isRequired,
+//     }),
+//   }).isRequired,
+//   onBackClick: PropTypes.func.isRequired,
+// };
