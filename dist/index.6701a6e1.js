@@ -25676,7 +25676,7 @@ class MovieView extends _reactDefault.default.Component {
                                 lineNumber: 35
                             },
                             __self: this,
-                            children: movieData.Genre
+                            children: movieData.Genre[0].name
                         })
                     ]
                 }),
@@ -25751,16 +25751,36 @@ class MovieView extends _reactDefault.default.Component {
         }));
     }
 }
+// MovieView.propTypes = {
+//   movieData: PropTypes.shape({
+//     ImagePath: PropTypes.string.isRequired,
+//     Title: PropTypes.string.isRequired,
+//     Year: PropTypes.string.isRequired,
+//     Genre: PropTypes.shape({
+//       Name: PropTypes.string,
+//       Description: PropTypes.string,
+//     }),
+//     Description: PropTypes.string.isRequired,
+//     Director: PropTypes.shape({
+//       Name: PropTypes.string.isRequired,
+//     }),
+//   }).isRequired,
+//   onBackClick: PropTypes.func.isRequired,
+// };
 MovieView.propTypes = {
     movieData: _propTypesDefault.default.shape({
         ImagePath: _propTypesDefault.default.string.isRequired,
         Title: _propTypesDefault.default.string.isRequired,
         Year: _propTypesDefault.default.string.isRequired,
-        // Genre: PropTypes.shape({
-        //   Name: PropTypes.string,
-        //   Description: PropTypes.string,
-        // }),
-        Description: _propTypesDefault.default.string.isRequired
+        Genre: _propTypesDefault.default.arrayOf(_propTypesDefault.default.shape({
+            _id: _propTypesDefault.default.string.isRequired,
+            Name: _propTypesDefault.default.string.isRequired,
+            Description: _propTypesDefault.default.string
+        }).isRequired).isRequired,
+        Description: _propTypesDefault.default.string.isRequired,
+        Director: _propTypesDefault.default.shape({
+            Name: _propTypesDefault.default.string.isRequired
+        })
     }).isRequired,
     onBackClick: _propTypesDefault.default.func.isRequired
 };
