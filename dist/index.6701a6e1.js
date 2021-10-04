@@ -25676,7 +25676,7 @@ class MovieView extends _reactDefault.default.Component {
                                 lineNumber: 35
                             },
                             __self: this,
-                            children: movieData.Genre[0].name
+                            children: movieData.Genre
                         })
                     ]
                 }),
