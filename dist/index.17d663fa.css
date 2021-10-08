@@ -1,0 +1,121 @@
+.party-txt {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 600;
+  color: #FFF3D9;
+}
+
+.party-btn {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #DC4731;
+  border: none;
+}
+.login-form h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  color: #DC4731;
+}
+
+.form-labels-placeholder::placeholder {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.login-form-btn {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  background-color: #3B0918;
+  border-color: #FFF3D9;
+  border-radius: 3px;
+  width: 80px;
+  height: 35px;
+  color: #FFF3D9;
+}
+
+.login-form-btn:hover {
+  background-color: #FFF3D9;
+  cursor: pointer;
+  color: #3B0918;
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-card-link:hover {
+  cursor: pointer;
+}
+.movie-details h2 {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #FFF3D9;
+}
+
+.title-fav Button {
+  background-color: transparent;
+  border: none;
+  color: #FFF3D9;
+  float: right;
+}
+
+.favorites-btn:hover {
+  cursor: pointer;
+  color: #DC4731;
+}
+
+.release-date {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 500;
+  color: #FFF3D9;
+}
+
+.movie-description {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 300;
+  color: #FFF3D9;
+}
+
+.movie-director span {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 500;
+  color: #FFF3D9;
+}
+
+.genre-btn {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  background-color: #FFF3D9;
+  border-color: #FFF3D9;
+  border-radius: 3px;
+  color: #3B0918;
+}
+
+.genre-btn:hover {
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.bi-arrow-left-circle {
+  font-size: 24px;
+  color: #FFF3D9;
+}
+.app-container {
+  background-color: #3B0918;
+}
+
+.container {
+  min-width: 335px;
+}
+/*# sourceMappingURL=index.17d663fa.css.map */
