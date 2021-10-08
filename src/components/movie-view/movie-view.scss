@@ -1,0 +1,67 @@
+// font-family: 'Anton', sans-serif;
+// font-family: 'Noto Sans Display', sans-serif;
+
+.movie-details h2 {
+  // border-radius: 20px;
+  // padding: 20px;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #FFF3D9;
+}
+
+.title-fav Button {
+  background-color: transparent;
+  border: none;
+  color: #FFF3D9;
+  float: right;
+}
+
+.favorites-btn:hover {
+  cursor: pointer;
+  color: #DC4731;
+}
+
+.release-date {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 500;
+  color: #FFF3D9;
+}
+  
+.movie-description {
+  // text-align: left;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 300;
+  color: #FFF3D9;
+}
+
+.movie-director span {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 500;
+  color: #FFF3D9;
+}
+
+.genre-btn {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 400;
+  background-color: #FFF3D9;
+  border-color: #FFF3D9;
+  border-radius: 3px;
+  color: #3B0918;
+}
+
+.genre-btn:hover {
+  cursor: pointer;
+}
+
+.back-btn {   
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+    
+.bi-arrow-left-circle {
+  font-size: 24px;
+  color: #FFF3D9
+}
+

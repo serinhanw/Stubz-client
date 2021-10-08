@@ -1,0 +1,34 @@
+// font-family: 'Anton', sans-serif;
+// font-family: 'Noto Sans Display', sans-serif;
+
+.login-form h1 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  color: #DC4731;
+}
+
+.form-labels-placeholder::placeholder {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.login-form-btn {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 400;
+  background-color: #3B0918;
+  border-color: #FFF3D9;
+  
+  border-radius: 3px;
+  width: 80px;
+  height: 35px;
+  color: #FFF3D9;
+}
+
+.login-form-btn:hover {
+  background-color: #FFF3D9;
+  cursor: pointer;
+  color: #3B0918;
+}
+
+// bsPrefix="back-btn"

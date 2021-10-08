@@ -22784,24 +22784,8 @@ class MainView extends _reactDefault.default.Component {
     }
     render() {
         const { user , register , movies , selectedMovie  } = this.state;
-        /* If no user, the LoginView is rendered. If a user logged in, user details are passed as prop to LoginView */ if (!user) return(/*#__PURE__*/ _jsxRuntime.jsx(_loginView.LoginView, {
-            onLoggedIn: (user1)=>this.onLoggedIn(user1)
-            ,
-            __source: {
-                fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 57
-            },
-            __self: this
-        }));
-        if (register) return(/*#__PURE__*/ _jsxRuntime.jsx(_registrationView.RegistrationView, {
-            onRegister: (user1)=>this.onRegister(user1)
-            ,
-            __source: {
-                fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 58
-            },
-            __self: this
-        }));
+        /* If no user, the LoginView is rendered. If a user logged in, user details are passed as prop to LoginView */ // if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />;
+        // if (register) return <RegistrationView onRegister={user => this.onRegister(user)} />;
         // Before the movies have been loaded
         if (movies.length === 0) return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
             className: "main-view",
@@ -25756,14 +25740,35 @@ MovieView.propTypes = {
         ImagePath: _propTypesDefault.default.string.isRequired,
         Title: _propTypesDefault.default.string.isRequired,
         Year: _propTypesDefault.default.string.isRequired,
-        // Genre: PropTypes.shape({
-        //   Name: PropTypes.string,
-        //   Description: PropTypes.string,
-        // }),
-        Description: _propTypesDefault.default.string.isRequired
+        Genre: _propTypesDefault.default.shape({
+            Name: _propTypesDefault.default.string,
+            Description: _propTypesDefault.default.string
+        }),
+        Description: _propTypesDefault.default.string.isRequired,
+        Director: _propTypesDefault.default.shape({
+            Name: _propTypesDefault.default.string.isRequired
+        })
     }).isRequired,
     onBackClick: _propTypesDefault.default.func.isRequired
-};
+}; // MovieView.propTypes = {
+ //   movieData: PropTypes.shape({
+ //     ImagePath: PropTypes.string.isRequired,
+ //     Title: PropTypes.string.isRequired,
+ //     Year: PropTypes.string.isRequired,
+ //     Genre: PropTypes.arrayOf(
+ //       PropTypes.shape({
+ //         _id: PropTypes.string.isRequired,
+ //         Name: PropTypes.string.isRequired,
+ //         Description: PropTypes.string,
+ //       }).isRequired,
+ //     ).isRequired,
+ //     Description: PropTypes.string.isRequired,
+ //     Director: PropTypes.shape({
+ //       Name: PropTypes.string.isRequired,
+ //     }),
+ //   }).isRequired,
+ //   onBackClick: PropTypes.func.isRequired,
+ // };
 
   $parcel$ReactRefreshHelpers$3741.postlude(module);
 } finally {
