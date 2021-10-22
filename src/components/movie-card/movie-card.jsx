@@ -1,18 +1,38 @@
+// import React, { useState } from 'react';
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+// import Image from 'react-bootstrap/Image';
+
+import { Link } from 'react-router-dom';
+import WebFont from 'webfontloader';
+
 import './movie-card.scss';
+
+WebFont.load({
+  google: {
+    families:
+      ['Anton:400', 'Oswald:200,300,400,500,700', 'Noto Sans Display:300,400,400italic,500,500italic,600']
+  }
+});
+
+{/* <Row className="pt-5 justify-content-center align-items-center mx-auto min-vh-100">
+      <Col lg={6} md={8} sm={12} ></Col> */}
 
 export class MovieCard extends React.Component {
   render() {
-    /* two props: one func onMovieClick, and one object movieData */
-    const { movieData, onMovieClick } = this.props;
+    const { movieData } = this.props;
 
     return (
-      <Card /*className="h-auto"*/>
-        <Card.Img className="movie-card-link" width={300} height={310} src={movieData.ImagePath} alt={movieData.Title + " Poster"} crossOrigin="anonymous" onClick={() => onMovieClick(movieData)} />
+      <Card border="dark" >
+        <Link to={`/movies/${movieData._id}`}>
+          <Card.Img className="movie-card-link" width={300} height={310} src={movieData.ImagePath} alt={movieData.Title + " Poster"} crossOrigin="anonymous" />
+        </Link>
         {/* <Card.Body>
           <Card.Title>{movieData.Title}</Card.Title>
           <Card.Text className="truncate">{movieData.Description}</Card.Text>
@@ -23,23 +43,18 @@ export class MovieCard extends React.Component {
   }
 }
 
+
 MovieCard.propTypes = {
   movieData: PropTypes.shape({
     ImagePath: PropTypes.string.isRequired,
     Title: PropTypes.string.isRequired,
-    Year: PropTypes.string.isRequired
+    Year: PropTypes.string.isRequired,
+    Description: PropTypes.string.isRequired,
   }).isRequired,
-  onMovieClick: PropTypes.func.isRequired,
 };
 
-// <div className="movie-card" onClick={() => { onMovieClick(movieData); }}>
-      //   {/* <div className="movie-poster">
-      //     <img src={movieData.ImagePath} />
-      //   </div> */}
-      //   <div className="movie-title">
-      //     <span>{movieData.Title}</span>
-      //   </div>
-      //   <div className="movie-year">
-      //     <span>{movieData.Year}</span>
-      //   </div>
-      // </div>
+
+
+
+
+

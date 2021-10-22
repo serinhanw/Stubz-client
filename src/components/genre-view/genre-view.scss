@@ -1,0 +1,52 @@
+// font-family: 'Anton', sans-serif;
+// font-family: 'Noto Sans Display', sans-serif;
+// font-family: 'Oswald', sans-serif;
+
+// box-shadow: 0px 0px 8px 5px #DC4731; 
+
+.genre-view {
+  color: #e6e6e9;
+  .row {
+    padding-bottom: 40px  !important;
+  }
+  h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+  }
+  .description {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 19px;
+  }
+  h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-shadow: 0 0 4px  #DC4731;
+
+  }
+}
+
+
+.back-btn {   
+  background-color: transparent;
+  border: none;
+}
+    
+.bi-arrow-left-circle {
+  font-size: 24px;
+  color: #e6e6e9
+}
+
+ 
+
+
+  
+  .genre-list-item {
+    background-color: black;
+    padding: 20px;
+    a {
+      text-decoration: none;
+    }
+  }
+  

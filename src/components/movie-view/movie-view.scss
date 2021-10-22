@@ -7,13 +7,13 @@
   font-family: 'Noto Sans Display', sans-serif;
   font-weight: 600;
   font-size: 40px;
-  color: #FFF3D9;
+  color: #e6e6e9;
 }
 
 .title-fav Button {
   background-color: transparent;
   border: none;
-  color: #FFF3D9;
+  color: #e6e6e9;
   float: right;
 }
 
@@ -25,29 +25,41 @@
 .release-date {
   font-family: 'Noto Sans Display', sans-serif;
   font-weight: 500;
-  color: #FFF3D9;
+  color: #e6e6e9;
 }
   
 .movie-description {
   // text-align: left;
   font-family: 'Noto Sans Display', sans-serif;
   font-weight: 300;
-  color: #FFF3D9;
+  color: #e6e6e9;
 }
 
 .movie-director span {
   font-family: 'Noto Sans Display', sans-serif;
   font-weight: 500;
-  color: #FFF3D9;
+  color: #e6e6e9;
+}
+
+.director-name {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 500;
+  color: #e6e6e9;
+  text-decoration: underline;
+}
+
+.director-name:hover {
+  color: #DC4731;
+  text-decoration: none;
 }
 
 .genre-btn {
   font-family: 'Noto Sans Display', sans-serif;
   font-weight: 400;
-  background-color: #FFF3D9;
-  border-color: #FFF3D9;
+  background-color: #e6e6e9;
+  border-color: #e6e6e9;
   border-radius: 3px;
-  color: #3B0918;
+  color: #050e25;
 }
 
 .genre-btn:hover {
@@ -57,11 +69,19 @@
 .back-btn {   
   background-color: transparent;
   border: none;
-  color: black;
+  // color: black;
 }
     
 .bi-arrow-left-circle {
   font-size: 24px;
-  color: #FFF3D9
+  background-color: transparent;
+  // border: none;
+  color: #e6e6e9;
+
 }
 
+ .bi-arrow-left-circle:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px  #e6e6e9;
+    ;
+  }
