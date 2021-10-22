@@ -9,6 +9,7 @@
   font-weight: 400;
   font-size: 20px;
   color: #DC4731;
+  background-color: transparent;
   border: none;
 }
 .login-form h1 {
@@ -110,6 +111,98 @@
 .bi-arrow-left-circle {
   font-size: 24px;
   color: #FFF3D9;
+}
+header .navbar .navbar-brand {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  color: #DC4731;
+  text-shadow: 0 0 4px #DC4731;
+  padding: 0 25px 0 0;
+}
+header .navbar .navbar-toggle {
+  background-color: #DC4731;
+}
+header .navbar .menubar .navlink {
+  font-family: "Noto Sans Display", sans-serif;
+  color: #FFF3D9;
+  text-shadow: 0 0 2px #FFF3D9;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 40px 0 0;
+}
+header .navbar .menubar .navlink:hover {
+  color: #DC4731;
+  text-decoration: none;
+}
+header .navbar .menubar .user-menu .username, header .navbar .menubar .user-menu .username-span {
+  font-family: "Noto Sans Display", sans-serif;
+  color: #DC4731;
+  text-shadow: 0 0 2px #DC4731;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+}
+header .navbar .menubar .user-menu .username-span:hover {
+  color: #FFF3D9;
+}
+header .navbar .menubar .user-menu .username {
+  font-family: "Noto Sans Display", sans-serif;
+  color: #DC4731;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+}
+header .navbar .menubar .user-menu .user-btn {
+  padding: 10px 10px;
+  font-size: 20px;
+  padding-bottom: 0;
+}
+header .navbar .menubar .user-menu .logout-btn {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  background-color: #3B0918;
+  border-color: #FFF3D9;
+  border-radius: 3px;
+  width: 80px;
+  height: 35px;
+  color: #FFF3D9;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 990px) {
+  header .navbar .menubar .user-menu .logout-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+header .navbar .menubar .user-menu .logout-btn:hover {
+  background-color: #FFF3D9;
+  cursor: pointer;
+  color: #3B0918;
+}
+header .navbar .menubar .login .login-btn {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  background-color: #3B0918;
+  border-color: #FFF3D9;
+  border-radius: 3px;
+  width: 80px;
+  height: 35px;
+  color: #FFF3D9;
+  margin-left: 30px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 990px) {
+  header .navbar .menubar .login .login-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+header .navbar .menubar .login .login-btn:hover {
+  background-color: #FFF3D9;
+  cursor: pointer;
+  color: #3B0918;
 }
 .app-container {
   background-color: #3B0918;

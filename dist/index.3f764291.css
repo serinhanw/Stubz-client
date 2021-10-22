@@ -1,0 +1,350 @@
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-card-link:hover {
+  cursor: pointer;
+}
+.movie-details h2 {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #e6e6e9;
+}
+
+.title-fav Button {
+  background-color: transparent;
+  border: none;
+  color: #e6e6e9;
+  float: right;
+}
+
+.favorites-btn:hover {
+  cursor: pointer;
+  color: #DC4731;
+}
+
+.release-date {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 500;
+  color: #e6e6e9;
+}
+
+.movie-description {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 300;
+  color: #e6e6e9;
+}
+
+.movie-director span {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 500;
+  color: #e6e6e9;
+}
+
+.director-name {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 500;
+  color: #e6e6e9;
+  text-decoration: underline;
+}
+
+.director-name:hover {
+  color: #DC4731;
+  text-decoration: none;
+}
+
+.genre-btn {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  background-color: #e6e6e9;
+  border-color: #e6e6e9;
+  border-radius: 3px;
+  color: #050e25;
+}
+
+.genre-btn:hover {
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.bi-arrow-left-circle {
+  font-size: 24px;
+  background-color: transparent;
+  color: #e6e6e9;
+}
+
+.bi-arrow-left-circle:hover {
+  cursor: pointer;
+  text-shadow: 0 0 5px #e6e6e9;
+}
+.title {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 75px;
+  color: #DC4731;
+  text-shadow: 0px 0px 3px #DC4731;
+}
+
+.form-control {
+  border-color: transparent;
+}
+
+.form-labels-placeholder::placeholder {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.login-form-btn {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  border-color: #e6e6e9;
+  border-radius: 5px;
+  width: 80px;
+  line-height: 2;
+  color: #e6e6e9;
+}
+
+.login-form-btn:hover {
+  cursor: pointer;
+  border-color: #DC4731;
+  color: #DC4731;
+}
+
+.party-txt {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  color: #DC4731;
+}
+
+.register-btn {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  background-color: #e6e6e9;
+  border-color: transparent;
+  box-shadow: 0px 0px 8px 5px #e6e6e9;
+  border-radius: 5px;
+  line-height: 2;
+  width: 120px;
+  color: #050e25;
+}
+
+.register-btn:hover {
+  cursor: pointer;
+  color: #e6e6e9;
+  background-color: #DC4731;
+  border-color: transparent;
+  box-shadow: 0px 0px 8px 5px #DC4731;
+  transition: 0.4s;
+}
+
+.genre-view {
+  color: #e6e6e9;
+}
+.genre-view .row {
+  padding-bottom: 40px !important;
+}
+.genre-view h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+}
+.genre-view .description {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 19px;
+}
+.genre-view h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  text-shadow: 0 0 4px #DC4731;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.bi-arrow-left-circle {
+  font-size: 24px;
+  color: #e6e6e9;
+}
+
+.genre-list-item {
+  background-color: black;
+  padding: 20px;
+}
+.genre-list-item a {
+  text-decoration: none;
+}
+.director-view {
+  color: #e6e6e9;
+}
+.director-view .row {
+  padding-bottom: 40px !important;
+}
+
+.name-row h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+}
+
+.about-row {
+  margin-bottom: 100px !important;
+}
+.about-row p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.list-group {
+  border-radius: 30px;
+}
+.list-group .list-group-item {
+  border-radius: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #e6e6e9;
+  box-shadow: 0px 0px 8px 5px #e6e6e9;
+  padding: 25px;
+  border: none;
+}
+.list-group .list-group-item a {
+  text-decoration: none;
+}
+
+.list-item {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: transparent;
+  box-shadow: 0px 0px 8px 5px #08173b;
+  border-radius: 30px;
+  padding: 25px;
+  border: #08173b;
+}
+.list-item a {
+  color: #e6e6e9;
+  text-decoration: none;
+}
+.list-item a :hover {
+  text-decoration: none;
+}
+.greeting-line {
+  font-family: "Anton", sans-serif;
+  color: #DC4731;
+}
+
+.profile-box h4 {
+  font-family: "Anton", sans-serif;
+  color: #DC4731;
+}
+.profile-box .profile-info {
+  font-family: "Oswald", sans-serif;
+  color: #050e25;
+  padding: auto;
+}
+.profile-box .profile-info h5 {
+  text-shadow: 0 0 2px #050e25;
+  text-align: center;
+}
+
+.update-form {
+  font-family: "Oswald", sans-serif;
+  color: #050e25;
+}
+.update-form p {
+  text-align: center;
+}
+
+.fav-movies-div h1 {
+  font-family: "Anton", sans-serif;
+  color: #e6e6e9;
+  margin-top: 50px;
+}
+
+.no-fav-movies {
+  font-family: "Oswald", sans-serif;
+  color: #e6e6e9;
+}
+header .navbar .navbar-brand {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  color: #DC4731;
+  text-shadow: 0 0 4px #DC4731;
+  padding: 0 25px 0 0;
+}
+header .navbar .navbar-brand:hover {
+  color: #050e25;
+}
+header .navbar .navbar-toggle {
+  background-color: #DC4731;
+}
+header .navbar .menubar .navlink {
+  font-family: "Oswald", sans-serif;
+  color: #e6e6e9;
+  font-weight: 500;
+  font-size: 16px;
+}
+header .navbar .menubar .navlink:hover {
+  color: #DC4731;
+  text-decoration: none;
+}
+header .navbar .menubar .user-menu {
+  font-family: "Oswald", sans-serif;
+  color: #e6e6e9;
+  font-weight: 700;
+  font-size: 18px;
+}
+header .navbar .menubar .user-menu .hi-span {
+  color: #e6e6e9;
+}
+header .navbar .menubar .user-menu .user-span:hover {
+  color: #DC4731;
+}
+header .navbar .menubar .logout-btn {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  border-color: #e6e6e9;
+  padding: 0 10px;
+  border-radius: 5px;
+  line-height: 2;
+  color: #e6e6e9;
+  margin-left: 2px;
+}
+@media screen and (max-width: 990px) {
+  header .navbar .menubar .logout-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+header .navbar .menubar .logout-btn:hover {
+  cursor: pointer;
+  border-color: #DC4731;
+  color: #DC4731;
+}
+
+.app-container {
+  background-color: #050e25;
+}
+
+.container {
+  min-width: 335px;
+}
+/*# sourceMappingURL=index.3f764291.css.map */
