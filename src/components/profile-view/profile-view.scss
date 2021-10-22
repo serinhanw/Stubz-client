@@ -1,0 +1,99 @@
+// font-family: 'Anton', sans-serif;
+// font-family: 'Noto Sans Display', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// #050e25 navy
+
+
+
+
+ .greeting-line {
+    font-family: 'Anton', sans-serif;
+    color: #DC4731;
+ }
+
+
+.profile-box {
+  h4 {
+    font-family: 'Anton', sans-serif;
+    color: #DC4731;
+  }
+  .profile-info {
+    font-family: 'Oswald', sans-serif;
+    color: #050e25;
+    // border-style: solid;
+    padding: auto;
+    h5 {
+      text-shadow: 0 0 2px  #050e25;
+      text-align: center;
+    }
+  }
+}
+
+// .update-profile-box {
+//   border: 1px solid #e6e6e9;
+//   border-radius: .25rem;
+//   padding: 10px;
+//   text-align: justify;
+//   margin: 10px;
+// }
+
+.update-form {
+  font-family: 'Oswald', sans-serif;
+  color: #050e25;
+
+  p {
+    text-align: center;
+  }
+}
+
+.fav-movies-div {
+  h1 {
+    font-family: 'Anton', sans-serif;
+    color: #e6e6e9;
+    margin-top: 50px;
+  }
+}
+
+.no-fav-movies {
+  font-family: 'Oswald', sans-serif;
+  color: #e6e6e9;
+}
+
+
+
+
+
+
+
+
+
+
+// .fav-movie {
+//   margin-bottom: 15px;
+
+//   figure {
+//     position: relative;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//     margin: auto;
+//     width: 100%
+//     img {
+//       display: block;
+//       height: 400px;
+//       margin: auto;
+//     } 
+//     figcaption {
+//       text-align: center;
+//     }
+//   }
+
+//   button.btn {
+//     display: block;
+//     margin: auto;
+//   }
+// }
+
+// .card {
+//   margin-bottom: 15px;
+// }
