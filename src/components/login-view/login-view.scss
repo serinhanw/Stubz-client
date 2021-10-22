@@ -1,10 +1,20 @@
 // font-family: 'Anton', sans-serif;
 // font-family: 'Noto Sans Display', sans-serif;
+// font-family: 'Oswald', sans-serif;
 
-.login-form h1 {
+
+.title {
   font-family: 'Anton', sans-serif;
   font-weight: 400;
+  font-size: 75px;
   color: #DC4731;
+  text-shadow: 0px 0px 3px #DC4731;
+}
+
+.form-control {
+  border-color: transparent;
+  
+  
 }
 
 .form-labels-placeholder::placeholder {
@@ -14,21 +24,52 @@
 }
 
 .login-form-btn {
-  font-family: 'Noto Sans Display', sans-serif;
-  font-weight: 400;
-  background-color: #3B0918;
-  border-color: #FFF3D9;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  border-color: #e6e6e9;
   
-  border-radius: 3px;
+  border-radius: 5px;
   width: 80px;
-  height: 35px;
-  color: #FFF3D9;
+  line-height: 2;
+  color: #e6e6e9;
 }
 
 .login-form-btn:hover {
-  background-color: #FFF3D9;
   cursor: pointer;
-  color: #3B0918;
+  border-color: #DC4731;
+  color: #DC4731;
 }
 
-// bsPrefix="back-btn"
+.party-txt {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  color: #DC4731;
+}
+
+.register-btn {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  background-color: #e6e6e9;
+  border-color: transparent;
+
+  box-shadow: 0px 0px 8px 5px #e6e6e9; 
+  
+  border-radius: 5px;
+  line-height: 2;
+  width: 120px;
+  color: #050e25;
+}
+
+.register-btn:hover {
+  cursor: pointer;
+  color: #e6e6e9;
+  background-color: #DC4731;
+  border-color: transparent;
+  box-shadow: 0px 0px 8px 5px #DC4731; 
+  transition: .4s;
+}
+
+
