@@ -93,7 +93,6 @@ export class MainView extends React.Component {
     window.open('/', '_self');
   }
 
-
   // onRegister(register) {
   //   this.setState({
   //     register: register,
@@ -237,9 +236,6 @@ export class MainView extends React.Component {
             ))
           }} />
 
-
-
-
           <Route path="/genres/:name" render={({ match, history }) => {
             {/* <Route path="/genres/:genreId" render={({ match, history }) => { */ }
             if (!user) return <Col>
@@ -254,8 +250,7 @@ export class MainView extends React.Component {
                 onBackClick={() => history.goBack()}
               />
             </Col>
-          }
-          } />
+          }} />
 
           <Route path="/users/:username" render={(match, history) => {
             if (!user) return <Col>
@@ -263,9 +258,11 @@ export class MainView extends React.Component {
             </Col>
             if (movies.length === 0) return <div className="main-view" />;
             return <Col md={8}>
-              <ProfileView history={history} movies={movies} user={user} onBackClick={() => history.goBack()} />
+              {/* <ProfileView history={history} movies={movies} user={user} onBackClick={() => history.goBack()} /> */}
+              <ProfileView history={history} movies={movies} />
             </Col>
           }} />
+
 
           {/* <Route path="/users/edit" render={(history) => {
             if (!user) return <Col>
