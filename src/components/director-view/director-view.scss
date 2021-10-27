@@ -21,10 +21,14 @@
     font-family: 'Anton', sans-serif;
     font-size: 50px;
   }
+  span {
+    font-size: 17px;
+  }
 }
 
 .about-row {
   margin-bottom: 100px  !important;
+  margin-top: -7px;
   p {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;

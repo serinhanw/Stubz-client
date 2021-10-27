@@ -1,7 +1,5 @@
 import React from 'react';
-// import { useHistory } from 'react-router';
 
-// import MovieCard from '../movie-card/movie-card';
 import PropTypes from 'prop-types';
 import WebFont from 'webfontloader';
 
@@ -45,8 +43,7 @@ export class DirectorView extends React.Component {
           </Row>
 
           <Row className="justify-content-center name-row" /*md={6} sm={12}*/>
-            <h2 className="">{director.Name}</h2>
-            {/* <p className="release-date">{director.Birthyear}</p> */}
+            <h2 className="">{director.Name}<span> {director.Birthyear}</span></h2>
           </Row>
 
           <Row className="justify-content-center about-row" >
@@ -65,23 +62,10 @@ export class DirectorView extends React.Component {
     );
   }
 }
-// DirectorView.propTypes = {
-//   director: PropTypes.shape({
-//     Name: PropTypes.string,
-//     Bio: PropTypes.string,
-//     Birthyear: PropTypes.string,
-//     Birthyear: PropTypes.instanceOf(Date),
-//   }), onBackClick: PropTypes.func.isRequired,
-// };
-
-// DirectorView.propTypes = {
-//   movieData: PropTypes.shape({
-//     Director: PropTypes.shape({
-//       Name: PropTypes.string,
-//       Bio: PropTypes.string,
-//       Birthyear: PropTypes.string,
-//     }).isRequired,
-//   }),
-// };
-
-
+DirectorView.propTypes = {
+  director: PropTypes.shape({
+    Name: PropTypes.string,
+    Bio: PropTypes.string,
+    Birthyear: PropTypes.string,
+  })
+};
