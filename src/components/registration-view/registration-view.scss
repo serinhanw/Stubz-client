@@ -1,0 +1,31 @@
+.register {
+  color: white;
+
+  p{
+    color: #DC4731;
+  }
+}
+
+.signup-btn {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  background-color: #e6e6e9;
+  border-color: transparent;
+
+  box-shadow: 0px 0px 8px 5px #e6e6e9; 
+  
+  border-radius: 5px;
+  line-height: 2;
+  width: 120px;
+  color: #050e25;
+}
+
+.signup-btn:hover {
+  cursor: pointer;
+  color: #e6e6e9;
+  background-color: #DC4731;
+  border-color: transparent;
+  box-shadow: 0px 0px 8px 5px #DC4731; 
+  transition: .4s;
+}

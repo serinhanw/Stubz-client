@@ -1,3 +1,11 @@
+// .card-container {
+//   bottom: -10px;
+// }
+
+// .card-body {
+//   bottom: -50px;
+// }
+
 .truncate {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -7,10 +15,17 @@
   text-overflow: ellipsis;
 }
 
+.card-img {
+  overflow: hidden;
+}
 
-.movie-card-link:hover {
+.card-img:hover {
   cursor: pointer;
 }
+
+// .rowe {
+//   min-height: 250px;
+// }
 
 
 
