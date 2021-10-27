@@ -84,7 +84,7 @@ export class MovieView extends React.Component {
     })
       .then(() => {
         alert(`Added to your Favorites`);
-        window.location.reload();
+        // window.location.reload();
       })
       .catch(function (err) {
         console.log(err);
