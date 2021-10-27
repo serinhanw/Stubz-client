@@ -65,8 +65,6 @@ export class MovieView extends React.Component {
           favorites: res.data.favorites,
 
         });
-        // console.log(res);
-        // console.log('User data is received!');
       })
       .catch((e) => {
         console.log('Error Retrieving User Data');
@@ -214,31 +212,6 @@ MovieView.propTypes = {
   }).isRequired
 };
 
-// MovieView.propTypes = {
-//   movieData: PropTypes.shape({
-//     Title: PropTypes.string.isRequired,
-//     Description: PropTypes.string.isRequired,
-//     ImagePath: PropTypes.string.isRequired,
-//     Genre: PropTypes.arrayOf(
-//       PropTypes.shape({
-//         _id: PropTypes.string,
-//         Name: PropTypes.string,
-//         Description: PropTypes.string,
-//       }),
-//     ),
-//     Director: PropTypes.arrayOf(
-//       PropTypes.shape({
-//         _id: PropTypes.string,
-//         Name: PropTypes.string,
-//         Bio: PropTypes.string,
-//         Birthyear: PropTypes.string,
-//       }),
-//     ),
-//   }).isRequired,
-//   onBackClick: PropTypes.func.isRequired,
-//   movies: PropTypes.array.isRequired
-
-// };
 
 
 

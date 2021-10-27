@@ -8,9 +8,6 @@ import WebFont from 'webfontloader';
 
 
 import './profile-view.scss';
-// import UserInfo from './user-info.jsx';
-// import UpdateUser from './update-user.jsx';
-// import FavoriteMovies from './favorite-movies.jsx';
 
 import { Button, Card, CardGroup, Container, Form, Row, Col } from 'react-bootstrap';
 
@@ -35,26 +32,9 @@ export class ProfileView extends React.Component {
       birthday: "",
       favorites: [],
       validated: false,
-      // errorMessage: '',
-      // errorStatus: '',
-      // errorResponse: '',
     };
   }
 
-  // constructor() {
-  //   super();
-
-  //   this.state = {
-  //     firstname: null,
-  //     lastname: null,
-  //     username: null,
-  //     password: null,
-  //     email: null,
-  //     birthday: null,
-  //     favorites: [],
-  //     validated: null,
-  //   };
-  // }
 
   componentDidMount() {
     const accessToken = localStorage.getItem('token');
@@ -63,36 +43,6 @@ export class ProfileView extends React.Component {
     }
   }
 
-
-  // getUser(token) {
-  //   const username = localStorage.getItem('user');
-  //   const config = {
-  //     headers: {
-  //       Authorization: `Bearer ${token}`,
-  //     },
-  //   };
-  //   axios
-  //     .get(`https://stubz.herokuapp.com/users/${username}`, config)
-  //     .then((res) => {
-
-  //       this.setState({
-  //         firstname: res.data.FirstName,
-  //         lastname: res.data.LastName,
-  //         username: res.data.username,
-  //         password: res.data.password,
-  //         email: res.data.email,
-  //         birthday: res.data.Birthday,
-  //         favorites: res.data.favorites,
-
-  //       });
-  //       console.log(res);
-  //       console.log('User data is received!');
-  //     })
-  //     .catch((e) => {
-  //       console.log('Error Retrieving User Data');
-  //       console.log(e);
-  //     });
-  // }
 
   getUser(token) {
     const username = localStorage.getItem('user');
@@ -124,26 +74,6 @@ export class ProfileView extends React.Component {
     /*console.log(e.target.value);*/
   };
 
-  // Remove account and log out user, returning to loginView
-  // handleDeregister = () => {
-  //   const token = localStorage.getItem('token');
-  //   const username = localStorage.getItem('user');
-
-  //   axios
-  //     .delete(`https://stubz.herokuapp.com/users/${username}`, {
-  //       headers: { Authorization: `Bearer ${token}` },
-  //     })
-  //     .then((res) => {
-  //       console.log(username + " has been deleted.");
-  //       localStorage.removeItem("user");
-  //       localStorage.removeItem("token");
-  //       window.location.pathname = "/";
-
-  //     })
-  //     .catch((e) => console.log('error'));
-  // };
-
-  // removeFavMovie() {
   removeFavMovie(e, movieData) {
     const token = localStorage.getItem('token');
     const username = localStorage.getItem('user');
@@ -250,9 +180,6 @@ export class ProfileView extends React.Component {
         console.log('Update Error');
         console.log(error);
         console.log(error.response);
-        // this.setState({ errorStatus: error.response.request.status });
-        // this.setState({ errorMessage: error.response.request.statusText });
-        // this.setState({ errorResponse: error.response.request.response });
       });
       this.setState({
         validated: true,
@@ -333,24 +260,6 @@ export class ProfileView extends React.Component {
   //   this.birthday = input;
   // }
 
-
-  // deleteMovie(e, movieData) {
-  //   e.preventDefault();
-  //   const token = localStorage.getItem('token');
-  //   const username = localStorage.getItem('user');
-  //   axios({
-  //     method: 'delete',
-  //     url: `https://stubz.herokuapp.com/users/${username}/movies/${movieData._id}`,
-  //     headers: { Authorization: `Bearer ${token}` },
-  //   })
-  //     .then(() => {
-  //       alert(`Removed from your Favorites`);
-  //       window.open(`/users/${username}`, '_self');
-  //     })
-  //     .catch(function (err) {
-  //       console.log(err);
-  //     });
-  // }
 
   handleDeleteUser(e) {
     e.preventDefault();
@@ -495,13 +404,6 @@ export class ProfileView extends React.Component {
 
                 </Form>
 
-                {/* {this.state.errorMessage &&
-              <div>
-                <Form.Text className="error-style">Error status: {this.state.errorStatus} : {this.state.errorMessage}</Form.Text>
-                <Form.Text className="error-style">{this.state.errorResponse}</Form.Text>
-              </div>} */}
-
-
               </Card.Body>
             </Card>
           </Col>
@@ -527,7 +429,6 @@ export class ProfileView extends React.Component {
                   return (
                     <Col xs={12} sm={6} md={4} lg={3} xl={2} key={m._id} className="d-flex flex-column align-items-center">
                       <MovieCard movieData={m} />
-                      {/* <Button className="delete-movie-btn" variant="primary" value={m._id} onClick={(e) => this.deleteMovie(e, m)}>Remove from Favorites</Button> */}
                       <Button className="delete-movie-btn" variant="primary" value={m._id} onClick={(e) => this.removeFavMovie(e, m)}>Remove from Favorites</Button>
                     </Col>
                   )
@@ -542,34 +443,16 @@ export class ProfileView extends React.Component {
 
 
 
-// ProfileView.propTypes = {
-//   user: PropTypes.object,
-//   movies: PropTypes.array.isRequired,
-//   onLoggedIn: PropTypes.func.isRequired,
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ProfileView.propTypes = {
+  username: PropTypes.shape({
+    favorites: PropTypes.array,
+    firstname: PropTypes.string,
+    lastname: PropTypes.string,
+    username: PropTypes.string,
+    email: PropTypes.string,
+    birthday: PropTypes.string,
+  }),
+};
 
 
 

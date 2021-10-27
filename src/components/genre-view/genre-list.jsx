@@ -45,7 +45,13 @@ export class GenreList extends React.Component {
 }
 
 // GenreList.propTypes = {
-//   genres: PropTypes.array.isRequired,
+//   genres: PropTypes.array,
+// };
+
+// GenreList.propTypes = {
+//   genre: PropTypes.shape({
+//     Name: PropTypes.string,
+//   })
 // };
 
 export default GenreList;

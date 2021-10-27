@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useHistory } from 'react-router';
 // import MovieCard from '../movie-card/movie-card';
 import PropTypes from 'prop-types';
 import WebFont from 'webfontloader';
@@ -76,10 +75,10 @@ export class GenreView extends React.Component {
   }
 }
 
-// GenreView.propTypes = {
-//   genre: PropTypes.shape({
-//     Name: PropTypes.string,
-//     Description: PropTypes.string
-//   }).isRequired
-// };
+GenreView.propTypes = {
+  genre: PropTypes.shape({
+    Name: PropTypes.string,
+    Description: PropTypes.string
+  })
+};
 

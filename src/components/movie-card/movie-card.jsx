@@ -1,4 +1,3 @@
-// import React, { useState } from 'react';
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -6,8 +5,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-// import Image from 'react-bootstrap/Image';
 
 import { Link } from 'react-router-dom';
 import WebFont from 'webfontloader';
@@ -21,8 +18,6 @@ WebFont.load({
   }
 });
 
-{/* <Row className="pt-5 justify-content-center align-items-center mx-auto min-vh-100">
-      <Col lg={6} md={8} sm={12} ></Col> */}
 
 export class MovieCard extends React.Component {
   render() {
