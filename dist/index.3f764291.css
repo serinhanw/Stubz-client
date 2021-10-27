@@ -394,11 +394,9 @@ header .navbar .menubar .logout-btn:hover {
 }
 .app-container {
   background-color: #050e25;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 100vh;
-}
-
-.container {
-  min-width: 335px;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=index.3f764291.css.map */
