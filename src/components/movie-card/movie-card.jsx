@@ -29,16 +29,22 @@ export class MovieCard extends React.Component {
     const { movieData } = this.props;
 
     return (
-      <Card border="dark" >
-        <Link to={`/movies/${movieData._id}`}>
-          <Card.Img className="movie-card-link" width={300} height={310} src={movieData.ImagePath} alt={movieData.Title + " Poster"} crossOrigin="anonymous" />
-        </Link>
-        {/* <Card.Body>
+      <Row className="justify-content-md-center align-items-center">
+        <Col className="mx-1" >
+          <Card border="dark" className="card-container">
+            <Card.Body className="card-body p-0">
+              <Link to={`/movies/${movieData._id}`}>
+                <Card.Img className="card-img" width={300} height={310} src={movieData.ImagePath} alt={movieData.Title + " Poster"} crossOrigin="anonymous" />
+              </Link>
+            </Card.Body>
+            {/* <Card.Body>
           <Card.Title>{movieData.Title}</Card.Title>
           <Card.Text className="truncate">{movieData.Description}</Card.Text>
           <Button onClick={() => onMovieClick(movieData)} variant="primary">Details</Button>
         </Card.Body> */}
-      </Card>
+          </Card>
+        </Col>
+      </Row>
     );
   }
 }

@@ -25,7 +25,7 @@ export class GenreList extends React.Component {
     // const { movies } = this.props;
 
     return (
-      <Row className="justify-content-center align-items-center text-center">
+      <Row className="justify-content-md-center align-items-center text-center mb-5">
         <Col lg={4} sm={12}>
           {/* <ListGroup className="genre-list">
             <ListGroup.Item className="text-center genre-list-item" >
