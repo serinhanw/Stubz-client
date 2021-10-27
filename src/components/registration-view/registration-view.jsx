@@ -6,7 +6,6 @@ import axios from 'axios';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-// import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 
 
@@ -27,6 +26,8 @@ export function RegistrationView(props) {
   const [email, setEmail] = useState("");
   const [birthday, setBirthday] = useState("");
 
+  const { handleLogin } = props;
+
   const handleRegister = (e) => {
     e.preventDefault();
     axios.post('https://stubz.herokuapp.com/users', {
@@ -46,6 +47,7 @@ export function RegistrationView(props) {
         console.log('error registering the user')
       });
   };
+
 
   //   const handleSubmit = (e) => {
   //     e.preventDefault();
@@ -68,7 +70,8 @@ export function RegistrationView(props) {
   //   };
 
   return (
-    <Form className="register justify-content-md-center">
+
+    <Form className="register justify-content-md-center pt-5">
       <Form.Group className="mb-3" controlId="formFirstname">
         <Form.Label>First Name:*</Form.Label>
         <Form.Control type="text" value={firstname} onChange={(e) => setFirstname(e.target.value)}></Form.Control>
@@ -98,7 +101,7 @@ export function RegistrationView(props) {
         <small>Fields marked with * are required.</small>
       </p>
 
-      <Button className="mt-2" variant="success" type="submit" onClick={handleRegister}>Sign Up</Button>
+      <Button className="mt-2" bsPrefix="signup-btn" type="submit" onClick={handleRegister}>Sign Up</Button>
     </Form>
 
   );

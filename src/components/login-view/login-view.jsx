@@ -24,6 +24,8 @@ export function LoginView(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const { handleRegister } = props;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('https://stubz.herokuapp.com/login', {
@@ -39,7 +41,6 @@ export function LoginView(props) {
         console.log('no such user')
       });
   };
-  //lg={6} md={8} sm={12} 
 
   return (
     <Row className="justify-content-center align-items-center mx-auto min-vh-100">
@@ -78,9 +79,9 @@ export function LoginView(props) {
 
           <p className="party-txt text-center mt-5">Ready to party?</p>
           <p className="text-center">
-            <Link to='/register'>
-              <Button bsPrefix="register-btn" type="submit">Sign up here!</Button>
-            </Link>
+            {/* <Link to='/register'> */}
+            <Button bsPrefix="register-btn" type="submit" onClick={handleRegister}>Sign up here!</Button>
+            {/* </Link> */}
           </p>
 
 
