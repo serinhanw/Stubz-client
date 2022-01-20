@@ -32304,7 +32304,7 @@ class MovieView extends _reactDefault.default.Component {
             }
         }).then(()=>{
             alert(`Added to your Favorites`);
-            window.location.reload();
+        // window.location.reload();
         }).catch(function(err) {
             console.log(err);
         });
